@@ -1,0 +1,37 @@
+{
+  "name": "proload-json5-register",
+  "version": "0.1.0",
+  "description": "A require hook to load JSON5 files",
+  "main": "./lib/index.cjs",
+  "module": "./lib/index.mjs",
+  "types": "./lib/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./lib/index.mjs",
+      "require": "./lib/index.cjs"
+    },
+    "./package.json": "./package.json"
+  },
+  "license": "MIT",
+  "keywords": [
+    "json",
+    "comments",
+    "json5",
+    "register",
+    "pirates"
+  ],
+  "author": "Nate Moore <nate@natemoo.re>",
+  "dependencies": {
+    "pirates": "^4.0.1",
+    "json5": "^2.2.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/natemoo-re/proload.git",
+    "directory": "packages/json5-register"
+  },
+  "homepage": "https://github.com/natemoo-re/proload#readme",
+  "bugs": {
+    "url": "https://github.com/natemoo-re/proload/issues"
+  }
+}
